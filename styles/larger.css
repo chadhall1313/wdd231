@@ -1,0 +1,31 @@
+@media screen and (min-width: 38rem) {
+    .hamburger {
+        display: none;
+    }
+
+    header {
+            grid-template-columns: 24px 1fr;
+    }
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    main {
+        grid-template-columns: 3fr 1fr;
+        gap: 1rem;
+    }
+
+    h1 {
+        grid-column: span 2;
+    }
+
+    .courses {
+        grid-column: span 2;
+    }
+}

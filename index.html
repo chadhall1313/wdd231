@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Chad Hall</title>
+    <meta name="description" content="The main landing page for Chad Hall for the WDD 231 - Web Frontend Development I class. It includes information about the Software Development Program.">
+    <meta name="author" content="Chad Hall">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/geo-alt.svg" alt="website logo icon" width="24" height="24">
+        <span>Chad Hall</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="navigation" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="aboutMe">
+            <h2>About Me</h2>
+            <p>My name is Chad Hall. I am 21 years old and I live in Idaho USA. I am a web developer getting my degree in Software Development from BYU Pathways Worldwide. I am employed as a seminary teacher for the Church of Jesus Christ of Latter-day Saints. I love the outdoors and spending time with my family. I am hoping to deepen my ability to develop this term and am excited to grow!</p>
+        </section>
+        <section class="profile">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="photo of Chad Hall">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
+            </div>
+            <div id="credits" class="credits">
+<!-- automatically filled using javascript -->
+            </div>
+            <div id="grid" class="grid">
+<!-- automatically filled using javascript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="links">
+            <ul>
+                <li><a href="https://github.com/chadhall1313"><img src="images/github.svg" alt="github profile"></a></li>
+                <li><a href="https://www.linkedin.com/in/chad-hall-2995463b8/"><img src="images/linkedin.svg" alt="linkedin profile"></a></li>
+                <li><a href="https://www.facebook.com/chad.hall1313"><img src="images/facebook.svg" alt="facebook profile"></a></li>
+            </ul>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Chad Hall - Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
