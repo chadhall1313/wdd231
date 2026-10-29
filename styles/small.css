@@ -185,7 +185,7 @@ footer {
 
 .links ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
     column-gap: 1rem;
 }
