@@ -96,6 +96,10 @@ nav li {
 
 /* Main */
 
+h1 {
+    padding: 1rem 0 0 1rem;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
