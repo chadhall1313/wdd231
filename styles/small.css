@@ -40,6 +40,7 @@ header img {
 .hamburger {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: none;
+    padding: 0 1rem 0 0;
     border: none;
     color: var(--font-color);
     font-size: 1.5rem;
@@ -110,7 +111,7 @@ section {
     border-radius: 1rem;
     background-color: var(--font-color);
     box-shadow: 7px 7px 7px;
-    margin: .5rem;
+    margin: 1rem;
 }
 
 section p {
@@ -127,6 +128,8 @@ h2 {
 .profile img {
     max-width: 300px;
     padding: 1rem;
+    display: block;
+    margin: auto;
 }
 
 .courses button {
@@ -139,8 +142,9 @@ h2 {
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     padding: 1rem;
 }
 
