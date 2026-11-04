@@ -1,8 +1,8 @@
 :root {
-    --primary_color: rgb(0, 0, 190);
-    --secondary_color: red;
-    --other_color: white;
-    --accent_color: gold;
+    --primary-color: rgb(0, 0, 190);
+    --secondary-color: red;
+    --other-color: white;
+    --accent-color: gold;
 }
 
 * {
@@ -17,8 +17,8 @@
 header {
     display: grid;
     grid-template-columns: 24px 1fr 44px;
-    background-color: var(--primary_color);
-    color: var(--other_color);
+    background-color: var(--primary-color);
+    color: var(--other-color);
 }
 
 header button {
@@ -72,9 +72,29 @@ header img {
     list-style-type: none;
 }
 
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
 
+nav a {
+    color: var(--other-color);
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold;
+}
 
+nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px #00f3ff,
+        0 0 10px #00f3ff,
+        0 0 20px #00f3ff;;
+}
 
+.current {
+    text-decoration: overline;
+    text-decoration-color: var(--other-color);
+}
 
 
 
@@ -97,8 +117,8 @@ header img {
 
 footer {
     display: block;
-    background-color: var(--primary_color);
-    color: var(--other_color);
+    background-color: var(--primary-color);
+    color: var(--other-color);
     padding: 1rem;
 }
 
