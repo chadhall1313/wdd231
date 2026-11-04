@@ -1,0 +1,9 @@
+@media screen and (min-width: 38rem) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+}
