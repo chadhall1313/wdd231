@@ -12,24 +12,27 @@
 ">
     <title>Pocatello Chamber of Commerce </title>
     <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory_small.css">
-    <link rel="stylesheet" href="styles/directory_large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/chamber.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/date.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="images/star_icon.svg" alt="star icon of Pocatello Idaho" width="48" height="48">
         <span>Pocatello Chamber of Commerce</span>
         <button aria-label="toggle navigation menu" id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="navigation" class="navigation">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="current"><a href="#" aria-current="page">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
@@ -37,15 +40,24 @@
     </main>
     <footer>
         <section>
-
+            <p><strong>Pocatello Chamber of Commerce</strong></p>
+            <p>911 N 7th Avenue</p>
+            <p>Pocatello, ID 83201</p>
+            <p>208-234-6163</p>
+            <p>mayor@pocatello.gov</p>
         </section>
-        <section>
-
+        <section class="socials">
+            <ul>
+                <li><a href="https://github.com/chadhall1313"><img src="../images/github.svg" alt="github profile" width="50" height="50"></a></li>
+                <li><a href="https://www.linkedin.com/in/chad-hall-2995463b8/"><img src="../images/linkedin.svg"
+                            alt="linkedin profile" width="50" height="50"></a></li>
+                <li><a href="https://www.facebook.com/chad.hall1313"><img src="../images/facebook.svg" alt="facebook profile" width="50" height="50"></a></li>
+            </ul>
         </section>
         <section>
             <p>WDD231 Class Project</p>
             <p>Chad Hall</p>
-            <p>&copy;<span id="currentyear"></span> Pocatello Chamber of Commerce</p>
+            <p>&copy; <span id="currentyear"></span> Pocatello Chamber of Commerce</p>
             <p id="lastModified"></p>
         </section>
     </footer>
