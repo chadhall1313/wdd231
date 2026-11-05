@@ -3,6 +3,7 @@
     --secondary-color: red;
     --other-color: white;
     --accent-color: gold;
+    --thirdary-color: rgb(196, 191, 191);
 }
 
 * {
@@ -96,10 +97,43 @@ nav a:hover {
     text-decoration-color: var(--other-color);
 }
 
+/* DIRECTORY */
 
+p {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+}
 
+.grid div {
+    background-color: var(--thirdary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding: 1rem;
+}
 
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.list img {
+    display: none;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
 
 
 

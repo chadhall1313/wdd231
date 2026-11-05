@@ -2,49 +2,49 @@
     "company": [
     {
         "name": "El Herradero Authentic Mexican Food",
-        "address": "123 Jefferson Ave, Pocatello, ID 83201",
+        "address": "123 Jefferson Ave",
         "number": "+1(208)233-6747",
         "website": "https://www.facebook.com/elherraderorestaurante/",
         "image": "images/el-herradero.jpg"
     },
     {
         "name": "Wilkes Funeral Home",
-        "address": "211 W. Chubbuck Road Chubbuck, ID 83202",
+        "address": "211 W. Chubbuck Road",
         "number": "(208) 233-1500",
         "website": "https://www.wilksfuneralhomes.com/",
         "image": "images/wilkes.webp"
     },
     {
         "name": "Amazing Glaze Donuts",
-        "address": "215 E Cedar St Ste B Pocatello, ID 83201",
+        "address": "215 E Cedar St Ste B",
         "number": "(208) 317-3751",
         "website": "https://amazingglazedonut.com/",
         "image": "images/amazing-glaze.jpg"
     },
     {
         "name": "The Salvation Army",
-        "address": "400 N 4th Ave, Pocatello, ID 83201",
+        "address": "400 N 4th Ave",
         "number": "208-232-5318",
         "website": "https://pocatello.salvationarmy.org/",
         "image": "images/salvation-army.png"
     },
     {
         "name": "Papa Kelsey's Pizza & Subs Restaurant",
-        "address": "840 E Alameda Rd Ste. D, Pocatello, ID 83201",
+        "address": "840 E Alameda Rd Ste. D",
         "number": "(208) 232-6931",
         "website": "http://www.papakelseyspoky.com/",
         "image": "images/papa-kelseys.jpg"
     },
     {
         "name": "Goody's Deli",
-        "address": "905 S 5th Ave, Pocatello, ID 83201",
+        "address": "905 S 5th Ave",
         "number": "(208) 233-9210",
         "website": "https://goodysdeli.com/",
         "image": "images/goodys-deli.png"
     },
     {
         "name": "Cielito Lindo Mexican Restaurant",
-        "address": "1010 Pocatello Ave. , Pocatello, ID, United States, 83201",
+        "address": "1010 Pocatello Ave",
         "number": "(208) 775-7776",
         "website": "https://www.facebook.com/cielitolindococinamexicanano1",
         "image": "images/cielito-lindo.jpg"
