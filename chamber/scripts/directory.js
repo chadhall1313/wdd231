@@ -34,14 +34,16 @@ const displayMembers = (members) => {
         let name = document.createElement("h2");
         let address = document.createElement("p");
         let number = document.createElement("p");
-        let website = document.createElement("p");
+        let website = document.createElement("a");
         let image = document.createElement("img");
         name.textContent = member.name;
         address.textContent = member.address;
         number.textContent = member.number;
         website.textContent = member.website;
-        image.setAttribute("src", member.image)
-        image.setAttribute("alt", `${member.name} logo`)
+        website.setAttribute("href", member.website);
+        website.setAttribute("target", "_blank")
+        image.setAttribute("src", member.image);
+        image.setAttribute("alt", `${member.name} logo`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "100");
 

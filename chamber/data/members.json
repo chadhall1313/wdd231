@@ -4,50 +4,57 @@
         "name": "El Herradero Authentic Mexican Food",
         "address": "123 Jefferson Ave",
         "number": "+1(208)233-6747",
-        "website": "https://www.facebook.com/elherraderorestaurante/",
-        "image": "images/el-herradero.jpg"
+        "website": "https://elherraderorestaurante.com",
+        "image": "images/el-herradero.jpg",
+        "level": "1"
     },
     {
         "name": "Wilkes Funeral Home",
         "address": "211 W. Chubbuck Road",
         "number": "(208) 233-1500",
         "website": "https://www.wilksfuneralhomes.com/",
-        "image": "images/wilkes.webp"
+        "image": "images/wilkes.webp",
+        "level": "1"
     },
     {
         "name": "Amazing Glaze Donuts",
         "address": "215 E Cedar St Ste B",
         "number": "(208) 317-3751",
         "website": "https://amazingglazedonut.com/",
-        "image": "images/amazing-glaze.jpg"
+        "image": "images/amazing-glaze.jpg",
+        "level": "1"
     },
     {
         "name": "The Salvation Army",
         "address": "400 N 4th Ave",
         "number": "208-232-5318",
         "website": "https://pocatello.salvationarmy.org/",
-        "image": "images/salvation-army.png"
+        "image": "images/salvation-army.png",
+        "level": "1"
     },
     {
         "name": "Papa Kelsey's Pizza & Subs Restaurant",
         "address": "840 E Alameda Rd Ste. D",
         "number": "(208) 232-6931",
         "website": "http://www.papakelseyspoky.com/",
-        "image": "images/papa-kelseys.jpg"
+        "image": "images/papa-kelseys.jpg",
+        "level": "1"
     },
     {
         "name": "Goody's Deli",
         "address": "905 S 5th Ave",
         "number": "(208) 233-9210",
         "website": "https://goodysdeli.com/",
-        "image": "images/goodys-deli.png"
+        "image": "images/goodys-deli.png",
+        "level": "1"
     },
     {
         "name": "Cielito Lindo Mexican Restaurant",
         "address": "1010 Pocatello Ave",
         "number": "(208) 775-7776",
-        "website": "https://www.facebook.com/cielitolindococinamexicanano1",
-        "image": "images/cielito-lindo.jpg"
+        "website": "https://cielitolindococinamexicanano.com",
+        "image": "images/cielito-lindo.jpg",
+        "level": "1"
     }
     ]
 }

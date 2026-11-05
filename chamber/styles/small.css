@@ -3,7 +3,7 @@
     --secondary-color: red;
     --other-color: white;
     --accent-color: gold;
-    --thirdary-color: rgb(196, 191, 191);
+    --thirdary-color: rgb(199, 199, 199);
 }
 
 * {
@@ -130,12 +130,23 @@ p {
 
 .list div {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
+    /* grid-template-columns: 2fr 1fr 1fr; */
     padding: 0.25rem;
 }
 
+.list div:nth-child(even) {
+    background-color: var(--thirdary-color);
+}
 
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu button {
+
+    max-width: 10rem;
+}
 
 
 
