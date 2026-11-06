@@ -5,11 +5,13 @@ const display = document.querySelector("#listOrGrid");
 gridBtn.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
+    display.classList.remove("before");
 })
 
 listBtn.addEventListener("click", () => {
     display.classList.add("list");
     display.classList.remove("grid");
+    display.classList.remove("before");
 })
 
 const url = "https://chadhall1313.github.io/wdd231/chamber/data/members.json"
