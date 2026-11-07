@@ -20,7 +20,10 @@
         grid-template-columns: 2fr 1fr 1fr;
     }
 
-    #listOrGrid {
-        
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
     }
 }
