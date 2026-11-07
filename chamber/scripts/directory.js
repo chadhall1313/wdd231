@@ -5,13 +5,11 @@ const display = document.querySelector("#listOrGrid");
 gridBtn.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
-    display.classList.remove("before");
 })
 
 listBtn.addEventListener("click", () => {
     display.classList.add("list");
     display.classList.remove("grid");
-    display.classList.remove("before");
 })
 
 const url = "https://chadhall1313.github.io/wdd231/chamber/data/members.json"
@@ -48,6 +46,8 @@ const displayMembers = (members) => {
         image.setAttribute("alt", `${member.name} logo`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "100");
+        image.setAttribute("height", "100");
+
 
         card.appendChild(name);
         card.appendChild(address);

@@ -3,9 +3,9 @@
     {
         "name": "El Herradero Authentic Mexican Food",
         "address": "123 Jefferson Ave",
-        "number": "+1(208)233-6747",
+        "number": "(208) 233-6747",
         "website": "https://elherraderorestaurante.com",
-        "image": "images/el-herradero.jpg",
+        "image": "images/el-herradero.webp",
         "level": "1"
     },
     {
@@ -21,7 +21,7 @@
         "address": "215 E Cedar St Ste B",
         "number": "(208) 317-3751",
         "website": "https://amazingglazedonut.com/",
-        "image": "images/amazing-glaze.jpg",
+        "image": "images/amazing-glaze.webp",
         "level": "1"
     },
     {
@@ -29,7 +29,7 @@
         "address": "400 N 4th Ave",
         "number": "208-232-5318",
         "website": "https://pocatello.salvationarmy.org/",
-        "image": "images/salvation-army.png",
+        "image": "images/salvation-army.webp",
         "level": "1"
     },
     {
@@ -37,7 +37,7 @@
         "address": "840 E Alameda Rd Ste. D",
         "number": "(208) 232-6931",
         "website": "http://www.papakelseyspoky.com/",
-        "image": "images/papa-kelseys.jpg",
+        "image": "images/papa-kelseys.webp",
         "level": "1"
     },
     {
@@ -45,7 +45,7 @@
         "address": "905 S 5th Ave",
         "number": "(208) 233-9210",
         "website": "https://goodysdeli.com/",
-        "image": "images/goodys-deli.png",
+        "image": "images/goodys-deli.webp",
         "level": "1"
     },
     {
@@ -53,7 +53,7 @@
         "address": "1010 Pocatello Ave",
         "number": "(208) 775-7776",
         "website": "https://cielitolindococinamexicanano.com",
-        "image": "images/cielito-lindo.jpg",
+        "image": "images/cielito-lindo.webp",
         "level": "1"
     }
     ]
