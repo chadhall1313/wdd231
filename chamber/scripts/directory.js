@@ -3,11 +3,13 @@ const listBtn = document.querySelector("#list");
 const display = document.querySelector("#listOrGrid");
 
 gridBtn.addEventListener("click", () => {
+    display.classList.remove("none");
     display.classList.add("grid");
     display.classList.remove("list");
 })
 
 listBtn.addEventListener("click", () => {
+    display.classList.remove("none");
     display.classList.add("list");
     display.classList.remove("grid");
 })
@@ -30,12 +32,13 @@ async function GetBusinessInfo(url) {
 
 const displayMembers = (members) => {
     members.forEach(member => {
-        let card = document.createElement("div");
+        let card = document.createElement("article");
         let name = document.createElement("h2");
         let address = document.createElement("p");
         let number = document.createElement("p");
         let website = document.createElement("a");
         let image = document.createElement("img");
+
         name.textContent = member.name;
         address.textContent = member.address;
         number.textContent = member.number;
@@ -48,12 +51,11 @@ const displayMembers = (members) => {
         image.setAttribute("width", "100");
         image.setAttribute("height", "100");
 
-
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(address);
         card.appendChild(number);
         card.appendChild(website);
-        card.appendChild(image);
         display.appendChild(card);
     });
 }

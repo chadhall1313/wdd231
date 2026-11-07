@@ -16,7 +16,11 @@
         padding: 1rem;
     }
 
-    .list div {
+    .list article {
         grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #listOrGrid {
+        
     }
 }
