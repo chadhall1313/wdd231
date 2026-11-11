@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chad Hall">
+    <meta name="description" content="The home page for The Pocatello Chamber of Commerce.">
+    <meta property="og:title" content="Home - Pocatello Chamber of Commerce">
+    <meta property="og:description" content="Check out the Pocatello Chamber of Commerce!">
+    <meta property="og:image" content="https://chadhall1313.github.io/wdd231/chamber/images/pocatello_flag.jpg">
+    <meta property="og:url" content="https://chadhall1313.github.io/wdd231/chamber/index.html
+">
+    <title>Home - Pocatello Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/chamber.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/star_icon.svg" alt="star icon of Pocatello Idaho" width="48" height="48">
+        <span>Pocatello Chamber of Commerce</span>
+        <button aria-label="toggle navigation menu" id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="navigation" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 38rem)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="view over Pocatello Idaho">
+            </picture>
+        </section>
+         <section class="CTA">
+
+         </section>
+         <section class="events">
+
+         </section>
+         <section class="weather">
+            <p>The current temperature in Pocatello, Idaho is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption id="weather-desc"></figcaption>
+            </figure>
+         </section>
+         <section class="spotlights">
+            <!-- <div class="grid">
+                
+            </div> -->
+
+         </section>
+    </main>
+    <footer>
+        <section>
+            <p><strong>Pocatello Chamber of Commerce</strong></p>
+            <p>911 N 7th Avenue</p>
+            <p>Pocatello, ID 83201</p>
+            <p>208-234-6163</p>
+            <p>mayor@pocatello.gov</p>
+        </section>
+        <section class="socials">
+            <ul>
+                <li><a href="https://github.com/chadhall1313"><img src="../images/github.svg" alt="github profile"
+                            width="30" height="30"></a></li>
+                <li><a href="https://www.linkedin.com/in/chad-hall-2995463b8/"><img src="../images/linkedin.svg"
+                            alt="linkedin profile" width="30" height="30"></a></li>
+                <li><a href="https://www.facebook.com/chad.hall1313"><img src="../images/facebook.svg"
+                            alt="facebook profile" width="30" height="30"></a></li>
+            </ul>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Chad Hall</p>
+            <p>&copy; <span id="currentyear"></span> Pocatello Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+
+</html>

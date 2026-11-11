@@ -180,9 +180,11 @@ p {
 }
 
 
+/* HOME */
 
-
-
+.hero img {
+    width: 100%;
+}
 
 
 
