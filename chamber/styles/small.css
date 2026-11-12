@@ -195,6 +195,7 @@ p {
 
 .cta {
     position: absolute;
+    width: 30%;
     border: 3px solid var(--secondary-color);
     border-radius: 1rem;
     background-color: var(--other-color);
@@ -202,6 +203,7 @@ p {
     font-size: large;
     bottom: 5%;
     right: 5%;
+    text-align: center;
 }
 
 .cta:hover {
