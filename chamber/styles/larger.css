@@ -26,4 +26,10 @@
         justify-content: space-around;
         list-style-type: none;
     }
+
+    .cta {
+        bottom: 10%;
+        right: 10%;
+        font-size: xx-large;
+    }
 }

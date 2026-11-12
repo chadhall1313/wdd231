@@ -182,13 +182,36 @@ p {
 
 /* HOME */
 
-.hero img {
-    width: 100%;
+.hero {
+    position: relative;
 }
 
+.hero img, .hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.cta {
+    position: absolute;
+    border: 3px solid var(--secondary-color);
+    border-radius: 1rem;
+    background-color: var(--other-color);
+    padding: 1rem;
+    font-size: large;
+    bottom: 5%;
+    right: 5%;
+}
 
+.cta:hover {
+    background-color: var(--thirdary-color);
+    border-color: var(--accent-color);
+}
 
+.cta a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
 
 
