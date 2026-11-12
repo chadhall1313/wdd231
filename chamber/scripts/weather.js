@@ -50,6 +50,7 @@ function displayForecast(days)
         let icon = document.createElement("img");
         let desc = document.createElement("p");
 
+        dayCard.setAttribute("class", "weather");
         temp.innerHTML = `Temp: ${day.main.temp}&deg;F`;
         icon.setAttribute("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`);
         icon.setAttribute("alt", day.weather[0].description);

@@ -32,4 +32,12 @@
         right: 10%;
         font-size: xx-large;
     }
+
+    .home {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .events, .spotlights {
+        grid-column: span 2;
+    }
 }
