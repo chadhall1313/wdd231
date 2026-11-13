@@ -250,11 +250,22 @@ p {
     align-items: center;
 }
 
+.spotlights fieldset {
+    border: 1px solid var(--other-color);
+    margin-top: 1rem;
 
+}
 
+.spotlights div {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: small;
+}
 
-
-
+.spotlights img {
+    display: block;
+    margin: 0 auto;
+}
 
 
 
