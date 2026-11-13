@@ -6,7 +6,7 @@
         "number": "(208) 233-6747",
         "website": "https://elherraderorestaurante.com",
         "image": "images/el-herradero.webp",
-        "level": "silver"
+        "level": "Silver"
     },
     {
         "name": "Wilkes Funeral Home",
@@ -14,7 +14,7 @@
         "number": "(208) 233-1500",
         "website": "https://www.wilksfuneralhomes.com/",
         "image": "images/wilkes.webp",
-        "level": "bronze"
+        "level": "Bronze"
     },
     {
         "name": "Amazing Glaze Donuts",
@@ -22,7 +22,7 @@
         "number": "(208) 317-3751",
         "website": "https://amazingglazedonut.com/",
         "image": "images/amazing-glaze.webp",
-        "level": "gold"
+        "level": "Gold"
     },
     {
         "name": "The Salvation Army",
@@ -30,7 +30,7 @@
         "number": "208-232-5318",
         "website": "https://pocatello.salvationarmy.org/",
         "image": "images/salvation-army.webp",
-        "level": "bronze"
+        "level": "Bronze"
     },
     {
         "name": "Papa Kelsey's Pizza & Subs Restaurant",
@@ -38,7 +38,7 @@
         "number": "(208) 232-6931",
         "website": "http://www.papakelseyspoky.com/",
         "image": "images/papa-kelseys.webp",
-        "level": "gold"
+        "level": "Gold"
     },
     {
         "name": "Goody's Deli",
@@ -46,7 +46,7 @@
         "number": "(208) 233-9210",
         "website": "https://goodysdeli.com/",
         "image": "images/goodys-deli.webp",
-        "level": "bronze"
+        "level": "Bronze"
     },
     {
         "name": "Cielito Lindo Mexican Restaurant",
@@ -54,7 +54,7 @@
         "number": "(208) 775-7776",
         "website": "https://cielitolindococinamexicanano.com",
         "image": "images/cielito-lindo.webp",
-        "level": "silver"
+        "level": "Silver"
     }
     ]
 }
