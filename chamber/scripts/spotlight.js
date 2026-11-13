@@ -1,1 +1,1 @@
-grid = document.querySelector("#spotlights");
+grid = document.querySelector("#spotlight");
