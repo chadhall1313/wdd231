@@ -132,7 +132,7 @@ h2 {
     margin: auto;
 }
 
-.courses button {
+.buttons button {
     background-color: var(--dark-secondary-color);
     color: white;
     padding: 1rem;
@@ -141,9 +141,13 @@ h2 {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -155,7 +159,7 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -181,6 +185,36 @@ h2 {
     border-radius: 1rem;
     border: 2px solid var(--primary-color);
 }
+
+dialog {
+    width: min(90%, 400px);
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.4);
+    backdrop-filter: blur(4px);
+}
+
+dialog button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+dialog p, dialog h3 {
+    padding: 1rem;
+}
+
+
 
 /* Footer */
 

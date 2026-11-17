@@ -105,9 +105,9 @@ function createCourseCard(coursesFiltered) {
     creditCount.textContent = `Total Credits: ${totalCredits}`;
     courseGrid.textContent = "";
     coursesFiltered.forEach(course => {
-        let card = document.createElement("div");
+        let card = document.createElement("button");
         card.textContent = `${course.subject} ${course.number}`;
-        card.setAttribute("class", "course");
+        card.setAttribute("id", `${course.subject}${course.number}-course`)
         if (course.completed)
         {
             card.setAttribute("class", "completed")
@@ -116,8 +116,44 @@ function createCourseCard(coursesFiltered) {
         {
             card.setAttribute("class", "not-completed")
         }
-        document.querySelector("#grid").appendChild(card);
+        courseGrid.appendChild(card);
+
+        const open = document.querySelector(`#${course.subject}${course.number}-course`);
+        const modal = document.querySelector("#course-details")
+
+        open.addEventListener("click", () => {
+            modal.showModal();
+            fillModalInfo(course);
+        });
+        
     });
 }
 
+function fillModalInfo(course) {
+    let modal = document.querySelector("#course-details");
+    let subject = document.createElement("h2");
+    let name = document.createElement("h3");
+    let credits = document.createElement("p");
+    let description = document.createElement("p");
+    let technology = document.createElement("p");
+    let closeButton = document.createElement("button");
 
+    closeButton.setAttribute("id", "close-button");
+    closeButton.addEventListener("click", () => {
+        modal.close();
+    })
+    closeButton.textContent = "❌";
+    modal.textContent = "";
+    subject.textContent = `${course.subject} ${course.number}`;
+    name.textContent = course.title;
+    credits.textContent = `${course.credits} Credits`;
+    description.textContent = course.description;
+    technology.textContent = `Technology: ${course.technology}`;
+
+    modal.appendChild(closeButton);
+    modal.appendChild(subject);
+    modal.appendChild(name);
+    modal.appendChild(credits);
+    modal.appendChild(description);
+    modal.appendChild(technology);
+}
