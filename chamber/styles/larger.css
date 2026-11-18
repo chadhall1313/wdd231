@@ -49,4 +49,8 @@
     .spotlights fieldset {
         margin-right: 1rem;
     }
+
+    .join {
+        grid-template-columns: 400px 1fr;
+    }
 }

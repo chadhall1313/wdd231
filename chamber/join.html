@@ -36,44 +36,65 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="join">
+        <h1>Join - Pocatello Chamber of Commerce</h1>
         <form action="thankyou.html" method="get">
-            <div>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="Your first name" required>
-            </div>
-            <div>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your last name" required>
-            </div>
-            <div>
-                <label for="organizational-title">Organizational Title</label>
-                <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}" required>
-            </div>
-            <div>
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" autocomplete="email" title="Your email address" placeholder="example123@pocatello.gov" required>
-            </div>
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" autocomplete="tel" title="Your phone number" required>
-            </div>
-            <div>
-                <label for="business">Business Name</label>
-                <input type="text" name="business" id="business" autocomplete="organization" title="Name of your organization" required>
-            </div>
-            <div>
-                <label for="membership-level"></label>
-                <input type="text">
-            </div>
-            <div>
-                <label for="description">Description</label>
-                <textarea name="description" id="description" title="Description of your business"></textarea>
-            </div>
-
+            <fieldset class="input">
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="first-name">First Name*</label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="Your first name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your last name" required>
+                </div>
+                <div>
+                    <label for="organizational-title">Organizational Title*</label>
+                    <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}" required>
+                </div>
+                <div>
+                    <label for="email">Email Address*</label>
+                    <input type="email" name="email" id="email" autocomplete="email" title="Your email address" placeholder="example123@pocatello.gov" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" title="Your phone number" required>
+                </div>
+                <div>
+                    <label for="business">Business Name*</label>
+                    <input type="text" name="business" id="business" autocomplete="organization" title="Name of your organization" required>
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" title="Description of your business"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>
+                    <input type="radio" name="membership-level" id="np" value="np" required>
+                    <label for="np">Non Profit Membership</label>
+                </div>
+                <div>
+                    <input type="radio" name="membership-level" id="bronze" value="bronze" required>
+                    <label for="bronze">Bronze Membership</label>
+                </div>
+                <div>
+                    <input type="radio" name="membership-level" id="silver" value="silver" required>
+                    <label for="silver">Silver Membership</label>
+                </div>
+                <div>
+                    <input type="radio" name="membership-level" id="gold" value="gold" required>
+                    <label for="gold">Gold Membership</label>
+                </div>
+            </fieldset>
             <input type="hidden" name="timestamp" id="timestamp">
             <button type="submit">Join Chamber</button>
         </form>
+        <aside>
+            <dialog id="membership-details"></dialog>
+        </aside>
     </main>
     <footer>
         <section>

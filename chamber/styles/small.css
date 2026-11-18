@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(0, 0, 190);
-    --secondary-color: rgb(214, 0, 0);
+    --primary-color: rgb(63, 63, 209);
+    --secondary-color: rgb(237, 13, 13);
     --other-color: white;
     --accent-color: gold;
     --thirdary-color: rgb(199, 199, 199);
@@ -161,7 +161,7 @@ p {
     gap: 1rem;
 }
 
-.menu button {
+.menu button, button[type="submit"] {
     width: 8rem;
     padding: .5rem;
     font-size: large;
@@ -171,7 +171,7 @@ p {
     border: 1px solid var(--primary-color);
 }
 
-.menu button:hover {
+.menu button:hover, button[type="submit"]:hover {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -268,11 +268,41 @@ p {
 }
 
 
+/* JOIN */
 
+.join {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+form {
+    padding: 1rem;
+}
 
+textarea {
+    resize: none;
+    height: 10rem;
+}
 
+.input div {
+    display: flex;
+    flex-direction: column;
+}
 
+input {
+    padding: .3rem;
+    margin: .3rem;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+fieldset {
+    margin: 1rem;
+}
 
 
 
@@ -281,7 +311,7 @@ p {
 h1 {
     padding: 0 0 1rem 1rem;
     border-bottom: 1px solid var(--primary-color);
-    
+    grid-column: span 2;
 }
 
 
