@@ -309,8 +309,17 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-fieldset {
-    margin: 1rem;
+label {
+    font-size: small;
+    padding-top: 1rem;
+}
+
+.level label {
+    font-size: larger;
+}
+
+input[type="radio"] {
+    margin-top: 1rem;
 }
 
 .benefits div {
@@ -348,6 +357,7 @@ fieldset {
 
 button[type="submit"] {
     width: 100%;
+    margin-top: 1rem;
     padding: .5rem;
     font-size: larger;
     background-color: var(--secondary-color);
@@ -406,6 +416,21 @@ dialog button {
 dialog p,
 dialog h3 {
     padding: 1rem;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks section {
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    width: 300px;
 }
 
 /* FOOTER */

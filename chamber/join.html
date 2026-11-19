@@ -51,8 +51,8 @@
                         <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your last name" required>
                     </div>
                     <div>
-                        <label for="organizational-title">Organizational Title*</label>
-                        <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}" required>
+                        <label for="organizational-title">Organizational Title</label>
+                        <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}">
                     </div>
                     <div>
                         <label for="email">Email Address*</label>
@@ -71,7 +71,7 @@
                         <textarea name="description" id="description" title="Description of your business"></textarea>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="level">
                     <legend>Membership Level</legend>
                     <div>
                         <input type="radio" name="membership" id="np" value="np" required>
