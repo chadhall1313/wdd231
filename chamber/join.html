@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,63 +38,131 @@
     </nav>
     <main class="join">
         <h1>Join - Pocatello Chamber of Commerce</h1>
-        <form action="thankyou.html" method="get">
-            <fieldset class="input">
-                <legend>Contact Information</legend>
-                <div>
-                    <label for="first-name">First Name*</label>
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="Your first name" required>
-                </div>
-                <div>
-                    <label for="last-name">Last Name*</label>
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your last name" required>
-                </div>
-                <div>
-                    <label for="organizational-title">Organizational Title*</label>
-                    <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}" required>
-                </div>
-                <div>
-                    <label for="email">Email Address*</label>
-                    <input type="email" name="email" id="email" autocomplete="email" title="Your email address" placeholder="example123@pocatello.gov" required>
-                </div>
-                <div>
-                    <label for="phone">Phone Number*</label>
-                    <input type="tel" name="phone" id="phone" autocomplete="tel" title="Your phone number" required>
-                </div>
-                <div>
-                    <label for="business">Business Name*</label>
-                    <input type="text" name="business" id="business" autocomplete="organization" title="Name of your organization" required>
-                </div>
-                <div>
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description" title="Description of your business"></textarea>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <div>
-                    <input type="radio" name="membership-level" id="np" value="np" required>
-                    <label for="np">Non Profit Membership</label>
-                </div>
-                <div>
-                    <input type="radio" name="membership-level" id="bronze" value="bronze" required>
-                    <label for="bronze">Bronze Membership</label>
-                </div>
-                <div>
-                    <input type="radio" name="membership-level" id="silver" value="silver" required>
-                    <label for="silver">Silver Membership</label>
-                </div>
-                <div>
-                    <input type="radio" name="membership-level" id="gold" value="gold" required>
-                    <label for="gold">Gold Membership</label>
-                </div>
-            </fieldset>
-            <input type="hidden" name="timestamp" id="timestamp">
-            <button type="submit">Join Chamber</button>
-        </form>
-        <aside>
-            <dialog id="membership-details"></dialog>
-        </aside>
+        <section>
+            <form action="thankyou.html" method="get">
+                <fieldset class="input">
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="first-name">First Name*</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="Your first name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your last name" required>
+                    </div>
+                    <div>
+                        <label for="organizational-title">Organizational Title*</label>
+                        <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" title="At least 7 characters. Only letters, spaces, and hyphens" pattern="[A-Za-z -]{7,}" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address*</label>
+                        <input type="email" name="email" id="email" autocomplete="email" title="Your email address" placeholder="example123@pocatello.gov" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel" title="Your phone number" required>
+                    </div>
+                    <div>
+                        <label for="business">Business Name*</label>
+                        <input type="text" name="business" id="business" autocomplete="organization" title="Name of your organization" required>
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" title="Description of your business"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div>
+                        <input type="radio" name="membership-level" id="np" value="np" required>
+                        <label for="np">Non Profit Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="membership-level" id="bronze" value="bronze" required>
+                        <label for="bronze">Bronze Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="membership-level" id="silver" value="silver" required>
+                        <label for="silver">Silver Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="membership-level" id="gold" value="gold" required>
+                        <label for="gold">Gold Membership</label>
+                    </div>
+                </fieldset>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit">Join Chamber</button>
+            </form>
+        </section>
+        <section class="benefits">
+            <div class="np">
+                <dialog id="np-details">
+                    <button id="np-close">❌</button>
+                    <h2>Non-Profit Membership</h2>
+                    <h3>Benefits include:</h3>
+                    <ul>
+                        <li>A plaque with your name on it</li>
+                        <li>Annual meeting with mayor</li>
+                    </ul>
+                    <h3>Cost:</h3>
+                    <p>FREE</p>
+                </dialog>
+                <h2>Non-Profit Membership Level</h2>
+                <button id="np-show">Details</button>
+            </div>
+            <div class="bronze">
+                <dialog id="bronze-details">
+                    <button id="bronze-close">❌</button>
+                    <h2>Bronze Membership</h2>
+                    <h3>Benefits include:</h3>
+                    <ul>
+                        <li>A plaque with your name on it</li>
+                        <li>Annual meeting with mayor</li>
+                        <li>Invitation to monthly commerce lunch</li>
+                    </ul>
+                    <h3>Cost:</h3>
+                    <p>$20/year</p>
+                </dialog>
+                <h2>Bronze Membership Level</h2>
+                <button id="bronze-show">Details</button>
+            </div>
+            <div class="silver">
+                <dialog id="silver-details">
+                    <button id="silver-close">❌</button>
+                    <h2>Silver Membership</h2>
+                    <h3>Benefits include:</h3>
+                    <ul>
+                        <li>A plaque with your name on it</li>
+                        <li>Annual meeting with mayor</li>
+                        <li>Invitation to monthly commerce lunch</li>
+                        <li>Home page spotlight</li>
+                    </ul>
+                    <h3>Cost:</h3>
+                    <p>$40/year</p>
+                </dialog>
+                <h2>Silver Membership Level</h2>
+                <button id="silver-show">Details</button>
+            </div>
+            <div class="gold">
+                <dialog id="gold-details">
+                    <button id="gold-close">❌</button>
+                    <h2>Gold Membership</h2>
+                    <h3>Benefits include:</h3>
+                    <ul>
+                        <li>A plaque with your name on it</li>
+                        <li>Annual meeting with mayor</li>
+                        <li>Invitation to monthly commerce lunch</li>
+                        <li>Home page spotlight</li>
+                        <li>Free subscription to magazine</li>
+                        <li>Discounted prices for local restaurants</li>
+                    </ul>
+                    <h3>Cost:</h3>
+                    <p>$65/year</p>
+                </dialog>
+                <h2>Gold Membership Level</h2>
+                <button id="gold-show">Details</button>
+            </div>
+        </section>
     </main>
     <footer>
         <section>

@@ -51,6 +51,10 @@
     }
 
     .join {
-        grid-template-columns: 400px 1fr;
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    .join h1 {
+        grid-column: span 2;
     }
 }
