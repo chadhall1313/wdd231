@@ -184,6 +184,14 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+.main article {
+    transition: transform .5s ease;
+}
+
+.main article:hover {
+    transform: scale(.97);
+}
+
 .none {
     display: none;
 }
@@ -307,6 +315,7 @@ input[type="radio"] {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 label {
@@ -316,10 +325,6 @@ label {
 
 .level label {
     font-size: larger;
-}
-
-input[type="radio"] {
-    margin-top: 1rem;
 }
 
 .benefits div {

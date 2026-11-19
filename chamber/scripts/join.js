@@ -51,4 +51,4 @@ goldClose.addEventListener("click", () => {
 })
 
 
-document.querySelector("#timestamp").value = new Date().toLocaleTimeString();
+document.querySelector("#timestamp").value = new Date().toLocaleString();
