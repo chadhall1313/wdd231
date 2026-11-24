@@ -11,4 +11,8 @@
             "addy button";
     }
 
+    .places {
+        min-height: 1500px;
+    }
+
 }
