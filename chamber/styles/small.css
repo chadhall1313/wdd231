@@ -438,6 +438,53 @@ dialog h3 {
     width: 300px;
 }
 
+/* DISCOVER */
+
+.places div {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--thirdary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "img"
+    "desc"
+    "addy"
+    "button";
+}
+
+.places div h2 {
+    grid-area: name;
+    padding: 1rem;
+}
+
+.places div img {
+    grid-area: img;
+    transition: transform .5s ease-in, box-shadow .5s ease-in;
+}
+
+.places div p {
+    grid-area: desc;
+    padding: 1rem;
+}
+
+.places div address {
+    grid-area: addy;
+    padding: 1rem;
+}
+
+.places div button {
+    grid-area: button;
+    margin: .5rem;
+}
+
+#welcome {
+    padding: 1rem;
+}
+
+
 /* FOOTER */
 
 footer {

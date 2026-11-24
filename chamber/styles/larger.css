@@ -57,4 +57,18 @@
     .join h1 {
         grid-column: span 2;
     }
+
+    .places div {
+        grid-template-areas:
+            "img name"
+            "img desc"
+            "img addy"
+            "img button"
+            ;
+    }
+
+    .places img:hover {
+        transform: scale(.95);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
 }
