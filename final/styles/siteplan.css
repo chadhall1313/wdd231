@@ -29,7 +29,7 @@ span {
     grid-template-columns: 50px 1fr;
 }
 
-img {
+.icon {
     position: relative;
     width: 40px;
     left: 10px;
