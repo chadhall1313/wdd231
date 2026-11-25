@@ -17,3 +17,99 @@
 body {
     background-color: var(--parchment);
 }
+
+.icon {
+    position: relative;
+    width: 45px;
+    left: 15px;
+    top: 25%;
+}
+
+header {
+    display: grid;
+    background-color: var(--purple);
+    grid-template-columns: 50px 1fr 50px;
+}
+
+h1 {
+    color: var(--white);
+    padding-left: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.hamburger {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: none;
+    padding-right: 2rem;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    /* display: none; */
+}
+
+.navigation.show {
+    max-height: 500px;
+    /* display: block; */
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--purple);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    padding: 1rem;
+    font-size: large;
+    transition: background-color .4s ease-in, text-shadow .4s ease-in;
+}
+
+nav li {
+    width: 100%;
+}
+
+.current {
+    background-color: var(--cerulean);
+    color: var(--white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}

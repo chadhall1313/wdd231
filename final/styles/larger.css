@@ -1,3 +1,33 @@
 @media screen and (min-width: 38rem) {
+    .navigation {
+        /* display: block; */
+        overflow: visible;
+        max-height: 100%;
+    }
     
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        text-align: center;
+        
+    }
+
+    nav a:hover {
+        background-color: var(--cerulean);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .current {
+        text-decoration: overline;
+        background-color: var(--purple);
+        text-shadow: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
 }
