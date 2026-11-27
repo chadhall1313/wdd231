@@ -62,7 +62,7 @@ h1, h2, h3 {
 .navigation {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
+    transition: max-height 0.35s ease-in-out;
     /* display: none; */
 }
 

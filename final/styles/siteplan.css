@@ -23,10 +23,17 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-span {
+header {
     display: grid;
     background-color: var(--purple);
     grid-template-columns: 50px 1fr;
+}
+
+footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
 }
 
 .icon {
